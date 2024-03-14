@@ -1,0 +1,10 @@
+---
+
+- name: Install Podman on other VMs
+  hosts: all
+  become: true
+  tasks:
+     - name: Install Podman
+       package:
+          name: podman
+          state: present

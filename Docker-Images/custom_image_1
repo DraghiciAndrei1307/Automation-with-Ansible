@@ -1,0 +1,8 @@
+FROM postgres:latest
+
+ENV POSTGRES_DB=cyber_gate_1
+
+EXPOSE 5432
+
+CMD ["postgres"]
+
